@@ -40,6 +40,10 @@ class FileDemo {
         for (String str : l) {
             String newPath = path + "\\" + str;
 
+            if (sort) {
+                println "------"
+            }
+
             if (new File(newPath).isDirectory()) {
 
                 String newPathStr = newPath.replace("E:\\gpTechnicalCombing\\", "");
